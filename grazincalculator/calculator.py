@@ -39,6 +39,8 @@ class Calculator:
                 numbers = numbers[1:]
             else:
                 self.memory = Decimal(0.0)
+                # If memory is empty and one num is enterd
+                # multiplication by 0
         self.memory = Decimal(self.memory)
         for num in numbers:
             self.memory *= num
