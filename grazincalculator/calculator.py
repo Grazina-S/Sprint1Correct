@@ -34,7 +34,8 @@ class Calculator:
             if len(numbers) > 1:
                 self.memory = numbers[0]
                 numbers = numbers[1:]
-            self.memory = Decimal(0.0)
+            else:
+                self.memory = Decimal(0.0)
         self.memory = Decimal(self.memory)
         for num in numbers:
             self.memory *= num
