@@ -22,8 +22,11 @@ class Calculator:
             if len(numbers) > 1:
                 self.memory = numbers[0]
                 numbers = numbers[1:]
+                # If memory is empty 1st num becomes minuend
             else:
                 self.memory = Decimal(0.0)
+                # If memory is empty and one num is entered
+                # minuend becomes 0.0
         self.memory = Decimal(self.memory)
         self.memory -= sum(numbers)
         return float(self.memory)
