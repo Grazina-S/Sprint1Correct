@@ -1,6 +1,6 @@
 import unittest
 
-from grazincalculator.calculator import Calculator
+from grazincalculator import Calculator
 
 
 class TestCalculator(unittest.TestCase):
